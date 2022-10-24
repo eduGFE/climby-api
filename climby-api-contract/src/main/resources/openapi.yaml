@@ -1,0 +1,12 @@
+openapi: 3.0.1
+info:
+  description: Api for climbing application
+  version: 1.0.0
+  title: ClimbyAPI
+  contact:
+    email: egofernandez91@gmail.com
+servers:
+  - url: http://localhost:8080/climby/api/v1
+paths:
+  /locations:
+    $ref: './api/locations.api.yaml#/provinces'
