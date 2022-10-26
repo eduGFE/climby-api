@@ -1,94 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>climby-api-service</artifactId>
+    <groupId>org.climby-api</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <name>climby-api-service</name>
+    <description>Module with Spring MVC services from climby api project</description>
+    <version>0.0.1-SNAPSHOT</version>
+
     <parent>
         <artifactId>climby-api-builder</artifactId>
         <groupId>org.climby-api</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>climby-api-service</artifactId>
-    <modelVersion>4.0.0</modelVersion>
-    <name>climby-api-service</name>
-    <description>Modulo de la logica de negocio del proyecto climby api</description>
-
     <dependencies>
-        <!--MODULES -->
         <dependency>
-            <groupId>org.climby-api</groupId>
-            <artifactId>climby-api-contract</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>1.5.3.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>1.5.3.Final</version>
         </dependency>
         <dependency>
             <groupId>org.climby-api</groupId>
             <artifactId>climby-api-dao</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.climby-api</groupId>
-            <artifactId>climby-api-vo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
-
-        <!--MODULES -->
-
-        <!--MAPSTRUCK-->
-        <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-            <version>1.5.3.Final</version>
-        </dependency>
-        <!--MAPSTRUCK-->
-
-
-        <!--MYBATIS-->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-        <!--MYBATIS-->
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
     </dependencies>
-
-   <!-- <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;
-                    <source>16</source>
-                    &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;
-                    <target>16</target>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>1.18.22</version>
-                        </path>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${mapstruct.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                    <compilerArgs>
-                        <compilerArg>-Amapstruct.defaultComponentModel=spring</compilerArg>
-                    </compilerArgs>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>-->
 
 </project>

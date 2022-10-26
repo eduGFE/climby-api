@@ -1,9 +1,0 @@
-ProvinceDTO:
-  type: object
-  properties:
-    name:
-      type: string
-    numberTravels:
-      type: integer
-      format: int4
-  title: ProvinceDTO

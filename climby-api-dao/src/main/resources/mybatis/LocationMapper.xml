@@ -4,9 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper
-        namespace="es.climby.dao.mapper.ProvinceMapper">
-    <select id="findAll" resultType="es.climby.dao.entity.ProvinceDB">
+        namespace="com.climby.dao.mapper.ProvinceMapper">
+    <select id="findAll" resultType="com.climby.dao.entity.ProvinceDB">
         SELECT * FROM tb_province
     </select>
 
 </mapper>
+

@@ -5,24 +5,18 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.yibao.beta</groupId>
-    <artifactId>beta</artifactId>
+    <groupId>org.climby-api</groupId>
+    <artifactId>climby-api-builder</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>beta</name>
-    <description>beta</description>
-
-    <modules>
-        <module>beta-biz</module>
-        <module>climby-api-controller</module>
-        <module>climby-api-dao</module>
-    </modules>
+    <name>climby-api-builder</name>
+    <description>Builder for the climby api aroyect</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
     <properties>
@@ -30,7 +24,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -48,12 +41,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <dependencyManagement>
+        <!--MODULES-->
         <dependencies>
             <dependency>
-                <groupId>com.yibao.beta</groupId>
-                <artifactId>beta-biz</artifactId>
+                <groupId>org.climby-api</groupId>
+                <artifactId>climby-api-service</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -66,22 +59,19 @@
                 <artifactId>climby-api-controller</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
+            <!--MODULES-->
 
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>1.3.2</version>
+                <version>2.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.24</version>
             </dependency>
-
         </dependencies>
-
-
-
     </dependencyManagement>
 
     <build>
@@ -94,5 +84,12 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <modules>
+        <module>climby-api-service</module>
+        <module>climby-api-controller</module>
+        <module>climby-api-dao</module>
+    </modules>
+
 
 </project>

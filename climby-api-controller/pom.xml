@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>climby-api-controller</artifactId>
+    <groupId>org.climby-api</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <name>climby-api-controller</name>
+    <description>Module with Spring MVC controllers from climby api project</description>
+    <version>0.0.1-SNAPSHOT</version>
+
     <parent>
-        <artifactId>beta</artifactId>
-        <groupId>com.yibao.beta</groupId>
+        <artifactId>climby-api-builder</artifactId>
+        <groupId>org.climby-api</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>climby-api-controller</artifactId>
-    <modelVersion>4.0.0</modelVersion>
-    <name>climby-api-controller</name>
-    <description>Modulo de los controllers Spring MVC del proyecto climby api</description>
-
     <dependencies>
-
         <dependency>
-            <groupId>com.yibao.beta</groupId>
-            <artifactId>beta-biz</artifactId>
+            <groupId>org.climby-api</groupId>
+            <artifactId>climby-api-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
