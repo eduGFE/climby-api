@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = "com.climby")
-@MapperScan({"com.climby.dao.mapper"})
+@MapperScan({"com.climby.dao.data.mapper"})
 
 public class BootApplication {
 

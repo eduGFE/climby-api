@@ -1,7 +1,8 @@
-package com.climby.dao.mapper;
+package com.climby.dao.data.mapper;
 
 
 
+import com.climby.dao.data.entity.ProvinceDB;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -10,5 +11,5 @@ import java.util.List;
 @Mapper
 public interface ProvinceMapper {
 
-    List<com.climby.dao.entity.ProvinceDB> findAll();
+    List<ProvinceDB> findAll();
 }

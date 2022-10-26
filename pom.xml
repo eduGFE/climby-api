@@ -46,12 +46,22 @@
         <dependencies>
             <dependency>
                 <groupId>org.climby-api</groupId>
-                <artifactId>climby-api-service</artifactId>
+                <artifactId>climby-api-contract</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.climby-api</groupId>
+                <artifactId>climby-api-vo</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.climby-api</groupId>
                 <artifactId>climby-api-dao</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.climby-api</groupId>
+                <artifactId>climby-api-service</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -86,9 +96,11 @@
     </build>
 
     <modules>
+        <module>climby-api-contract</module>
+        <module>climby-api-vo</module>
+        <module>climby-api-dao</module>
         <module>climby-api-service</module>
         <module>climby-api-controller</module>
-        <module>climby-api-dao</module>
     </modules>
 
 

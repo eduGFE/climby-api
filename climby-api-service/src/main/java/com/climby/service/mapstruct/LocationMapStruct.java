@@ -1,7 +1,7 @@
 package com.climby.service.mapstruct;
 
-import com.climby.dao.entity.ProvinceDTO;
-import com.climby.dao.entity.ProvinceDB;
+import com.climby.dao.data.entity.ProvinceDTO;
+import com.climby.dao.data.entity.ProvinceDB;
 import org.mapstruct.Mapper;
 
 import java.util.List;

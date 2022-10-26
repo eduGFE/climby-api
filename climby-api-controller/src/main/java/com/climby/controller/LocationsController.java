@@ -2,6 +2,7 @@ package com.climby.controller;
 
 
 import com.climby.controller.util.ControllerMapper;
+import com.climby.dao.data.entity.ProvinceDTO;
 import com.climby.service.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +25,7 @@ public class LocationsController {
 
 
     @GetMapping("/provinces")
-    public ResponseEntity<List<com.climby.dao.entity.ProvinceDTO>> findAllProvinces() {
+    public ResponseEntity<List<ProvinceDTO>> findAllProvinces() {
         return ResponseEntity.ok(locationService.findAll().stream().map(item -> controllerMapper.map(item)).collect(Collectors.toList()));
     }
 }

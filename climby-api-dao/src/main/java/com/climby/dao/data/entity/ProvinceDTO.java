@@ -1,4 +1,4 @@
-package com.climby.dao.entity;
+package com.climby.dao.data.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,9 +9,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ProvinceDB {
+public class ProvinceDTO {
 
     private String name_province;
 
     private Integer number_travels;
+
+
+
 }

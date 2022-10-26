@@ -2,9 +2,11 @@ package com.climby.service;
 
 
 
+import com.climby.dao.data.entity.ProvinceDTO;
+
 import java.util.List;
 
 public interface LocationService {
 
-    List<com.climby.dao.entity.ProvinceDTO> findAll();
+    List<ProvinceDTO> findAll();
 }

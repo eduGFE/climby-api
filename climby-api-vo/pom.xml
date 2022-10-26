@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>climby-api-vo</artifactId>
+    <groupId>org.climby-api</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <name>climby-api-vo</name>
+    <description>Vo module of the climby api project</description>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <parent>
+        <artifactId>climby-api-builder</artifactId>
+        <groupId>org.climby-api</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+</project>
