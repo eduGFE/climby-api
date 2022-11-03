@@ -1,8 +1,9 @@
 package com.climby.controller;
 
 
+import com.climby.contract.api.LocationsApi;
+import com.climby.contract.vo.ProvinceDTO;
 import com.climby.controller.util.ControllerMapper;
-import com.climby.dao.data.entity.ProvinceDTO;
 import com.climby.service.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/locations")
-public class LocationsController {
+public class LocationsController implements LocationsApi {
 
     @Autowired
     private LocationService locationService;
@@ -23,9 +24,9 @@ public class LocationsController {
     @Autowired
     private ControllerMapper controllerMapper;
 
-
     @GetMapping("/provinces")
     public ResponseEntity<List<ProvinceDTO>> findAllProvinces() {
         return ResponseEntity.ok(locationService.findAll().stream().map(item -> controllerMapper.map(item)).collect(Collectors.toList()));
     }
+
 }

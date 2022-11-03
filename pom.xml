@@ -101,6 +101,7 @@
         <module>climby-api-dao</module>
         <module>climby-api-service</module>
         <module>climby-api-controller</module>
+        <module>climby-api-boot</module>
     </modules>
 
 

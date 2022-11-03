@@ -1,8 +1,7 @@
 package com.climby.service;
 
 
-
-import com.climby.dao.data.entity.ProvinceDTO;
+import com.climby.vo.locations.ProvinceDTO;
 
 import java.util.List;
 

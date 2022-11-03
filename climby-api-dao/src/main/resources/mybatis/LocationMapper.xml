@@ -5,7 +5,7 @@
 
 <mapper
         namespace="com.climby.dao.data.mapper.ProvinceMapper">
-    <select id="findAll" resultType="com.climby.dao.data.entity.ProvinceDB">
+    <select id="findAll" resultType="com.climby.vo.locations.ProvinceDB">
         SELECT * FROM tb_province
     </select>
 

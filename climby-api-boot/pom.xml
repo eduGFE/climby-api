@@ -16,35 +16,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-            <version>1.5.3.Final</version>
-        </dependency>
-        <dependency>
             <groupId>org.climby-api</groupId>
-            <artifactId>climby-api-dao</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>climby-api-controller</artifactId>
         </dependency>
-
-
-        <!--MYBATIS-->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-        <!--MYBATIS-->
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-        </dependency>
-
     </dependencies>
 
 </project>

@@ -1,0 +1,9 @@
+ProvinceDTO:
+  type: object
+  properties:
+    name_province:
+      type: string
+    number_travels:
+      type: integer
+      format: int32
+  title: ProvinceDTO

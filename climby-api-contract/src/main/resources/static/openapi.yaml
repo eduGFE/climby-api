@@ -1,0 +1,40 @@
+openapi: 3.0.1
+info:
+  description: ApiClimby
+  version: 3.0.0
+  title: ClimbyAPI
+  contact:
+    email: egofernandez91@gmail.com
+    name: Eduardo Gomez Fernandez
+servers:
+  - url: http://localhost:8080/
+paths:
+  /locations/provinces:
+    get:
+      tags:
+        - location
+      description: Returns all provinces
+      operationId: findAllProvinces
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ProvinceDTO'
+
+components:
+  schemas:
+    ProvinceDTO:
+      type: object
+      properties:
+        name_province:
+          type: string
+        number_travels:
+          type: integer
+          format: int32
+      title: ProvinceDTO
+
+

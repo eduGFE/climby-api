@@ -1,0 +1,15 @@
+provinces:
+  get:
+    tags:
+      - location
+    description: Returns all provinces
+    operationId: findAllProvinces
+    responses:
+      "200":
+        description: OK
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: "../model/province.model.yaml#/ProvinceDTO"
